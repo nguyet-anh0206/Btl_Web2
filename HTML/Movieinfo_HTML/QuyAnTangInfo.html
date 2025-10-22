@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Cinema</title>
+    <link href="../lib/Swiper.js/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../CSS/Header.css" />
+    <link rel="stylesheet" href="../../CSS/Footer.css" />
+    <link rel="stylesheet" href="../../CSS/MovieInfo.css" />
+    <link rel="stylesheet" href="../../CSS/Loading.css">
+  </head>
+<body>
+   <header class="header">
+        <div class="header-left">
+            <img src="../../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TIME CINEMA</span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../../HTML/Index.html" class="active">Trang chủ</a>
+            <a href="../../HTML/Ticket.html">Mua vé</a>
+            <a href="../../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+            <a href="../../HTML/Prices.html">Giá vé</a>
+        </nav>
+
+        <div class="header-right">
+            <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+            <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+        </div>
+    </header>
+
+    <!-- Popup -->
+    <div class="nen-mo" id="nenMo">
+        <div class="hop-dangnhap">
+            <span class="nut-dong" id="nutDong">&times;</span>
+            <h2 id="tieuDeForm">Đăng nhập</h2>
+            <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+            <input type="password" id="matKhau" placeholder="Mật khẩu">
+            <button id="nutXacNhan">Đăng nhập</button>
+            <div class="chuyen" id="chuyenDangKy">
+                <a href="#">Đăng ký</a>
+            </div>
+        </div>
+    </div>
+    
+    <main class="container my-5">
+        <div class="row">
+            <!-- Movie Poster and Booking Button -->
+            <section class=" movie-poster-section" id="movie-poster">
+              <img src="../../Images/Posters/QuyAnTang.jpg" alt="Poster phim" class="custom-img-size movie-poster" />   
+            </section>
+    
+            <!-- Movie Details and Summary -->
+            <section class=" movie-details-section">
+              <div id="movie-details" >
+                  <h1 class=" movie-title">Tee Yod: Quỷ Ăn Tạng 3</h1>
+                  <div class="movie-info">
+                      <div class="info-item"><strong>Đạo diễn:</strong>Narit Yuvaboon</div>
+                      <div class="info-item"><strong>Diễn viên:</strong>Nadech Kugimiya, Denise Jelilcha Kapaun, Mim Rattawadee Wongthong, 
+                        Junior Kajbhunditt Jaidee, Friend Peerakrit Phacharaboonyakiat.</div>
+                      <div class="info-item"><strong>Người đủ 16 tuổi trở lên<br> Ngày Khởi Chiếu:</strong> 10/10/2025</div>
+                      <div class="info-item"><strong>Thông tin cơ bản: </strong>Hành động (104 Phút)</div>
+                      <div class="info-item"><strong>Loại: 2D | Normal sound | Phụ đề tiếng Việt</strong></div>
+                  </div>
+              </div>
+
+              <!-- Movie Summary -->
+              
+                  <h2 class=" summary-title">Chi tiết nội dung</h2>
+                  <p class="summary-text">
+                    Yak và gia đình phải đối mặt với nỗi kinh hoàng mới khi “Yee” – cô em út – đột ngột mất tích bí ẩn. Yak buộc phải cùng Yos, 
+                    Yod và Papan lên đường đến “Bong Sa Noh Bian” – khu rừng ma ám – để cứu Yee trước khi những linh hồn tà ác một lần nữa bị đánh thức.
+                  </p>
+              
+              <a href="../../HTML/Index.html" class="btn-secondary  ">
+                   <button class="btn-custom">Quay lại</button>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer-->
+   <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-menu">
+                <li><a href="../../HTML/Index.html">Trang chủ</a></li>
+                <li><a href="../../HTML/Ticket.html">Mua vé</a></li>
+                <li><a href="../../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+                <li><a href="../../HTML/Prices.html">Giá vé</a></li>
+                <li><a href="../../HTML/ThongTin.html">Thông Tin</a></li>
+                <li><a href="../../HTML/HoTro.html">Hỗ Trợ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+            <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+            <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+            <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+            <p>~Design by nice~</p>
+        </div>
+    </footer>
+    <!-- Loader  -->
+    <div class="loader"></div> 
+    <!-- Scripts-->
+     <script src="../../JS/Header.js"></script>
+     <script src="../../JS/Loading.js"></script>
+    </body>
+
+</html>

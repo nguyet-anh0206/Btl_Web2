@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin rạp phim</title>
+    <link rel="stylesheet" href="../CSS/ThongTin.CSS">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Loading.css">
+
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TIME CINEMA</span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../HTML/Index.html" class="active">Trang chủ</a>
+            <a href="../HTML/Ticket.html">Mua vé</a>
+            <a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+            <a href="../HTML/Prices.html">Giá vé</a>
+        </nav>
+
+        <div class="header-right">
+            <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+            <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+        </div>
+    </header>
+
+    <!-- Popup -->
+    <div class="nen-mo" id="nenMo">
+        <div class="hop-dangnhap">
+            <span class="nut-dong" id="nutDong">&times;</span>
+            <h2 id="tieuDeForm">Đăng nhập</h2>
+            <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+            <input type="password" id="matKhau" placeholder="Mật khẩu">
+            <button id="nutXacNhan">Đăng nhập</button>
+            <div class="chuyen" id="chuyenDangKy">
+                <a href="#">Đăng ký</a>
+            </div>
+        </div>
+    </div>
+<!-- ------------------ -->
+
+    <section id="thong-tin" class="info-section">
+        <h2>Giới thiệu về Time Cinema</h2>
+        <p>
+            <b>Time Cinema</b> là hệ thống rạp chiếu phim hiện đại với mục tiêu mang đến
+            trải nghiệm điện ảnh đẳng cấp cho khán giả Việt Nam. Chúng tôi luôn cập nhật
+            những bộ phim bom tấn mới nhất cùng không gian rạp sang trọng, âm thanh sống động
+            và dịch vụ tận tâm.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+            <h3>Tầm nhìn & Sứ mệnh</h3>
+            <p>
+                Trở thành điểm đến yêu thích của mọi tín đồ điện ảnh — nơi khán giả
+                tận hưởng không chỉ là phim mà còn là cảm xúc và trải nghiệm trọn vẹn.
+            </p>
+            </div>
+
+            <div class="info-item">
+            <h3>Chi nhánh & Liên hệ</h3>
+            <p>
+                - Cơ sở chính: Số 3 Cầu Giấy, Hà Nội<br>
+                - Hotline: 9999-9999<br>
+                - Email: support@timecinema.vn
+            </p>
+            </div>
+
+            <div class="info-item">
+            <h3>Giờ hoạt động</h3>
+            <p>
+                Mở cửa từ <b>8:00 - 23:00</b> mỗi ngày, bao gồm cả ngày lễ và cuối tuần.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+<!-- ------------------ -->
+
+    <!--Footer-->
+   <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-menu">
+                <li><a href="../HTML/Index.html">Trang chủ</a></li>
+                <li><a href="../HTML/Ticket.html">Mua vé</a></li>
+                <li><a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+                <li><a href="../HTML/Prices.html">Giá vé</a></li>
+                <li><a href="../HTML/ThongTin.html">Thông Tin</a></li>
+                <li><a href="../HTML/HoTro.html">Hỗ Trợ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+            <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+            <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+            <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+            <p>~Design by nice~</p>
+        </div>
+    </footer>
+
+
+
+<!-- -------------------------------------------- -->
+
+<!-- Loader  -->
+<div class="loader"></div> 
+
+
+
+<!-- Phần Link JS -->
+<script src="../JS/Prices.js"></script>
+<script src="../JS/Loading.js"></script>
+<script src="../JS/Header.js"></script>
+
+</body>
+</html>

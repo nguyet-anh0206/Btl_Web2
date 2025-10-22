@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khuyến mãi</title>
+  <link rel="stylesheet" href="../CSS/Promotion.css" />
+  <link rel="stylesheet" href="../CSS/Header.css">
+  <link rel="stylesheet" href="../CSS/Footer.css">
+  <link rel="stylesheet" href="../CSS/Loading.css">
+</head>
+<body>
+     <header class="header">
+      <div class="header-left">
+        <img src="../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+        <span class="logo-text">TIME CINEMA</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="../HTML/Index.html" class="active">Trang chủ</a>
+        <a href="../HTML/Ticket.html">Mua vé</a>
+        <a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+        <a href="../HTML/Prices.html">Giá vé</a>
+      </nav>
+
+      <div class="header-right">
+        <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+        <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+      </div>
+    </header>
+
+    <!-- Popup -->
+    <div class="nen-mo" id="nenMo">
+      <div class="hop-dangnhap">
+        <span class="nut-dong" id="nutDong">&times;</span>
+        <h2 id="tieuDeForm">Đăng nhập</h2>
+        <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+        <input type="password" id="matKhau" placeholder="Mật khẩu">
+        <button id="nutXacNhan">Đăng nhập</button>
+        <div class="chuyen" id="chuyenDangKy">
+          <a href="#">Đăng ký</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="promotions" id="promoList">
+        <h2>Các chương trình khuyến mãi</h2>
+        <div class="promo-container">
+
+        <!-- 8 thẻ khuyến mãi -->
+        <div class="promo-card" data-id="banggia">
+            <img src="../Images/Promotion/img1.png" alt="Bảng giá bắp nước 2025" />
+            <p class="date">08/08/2025</p>
+            <h3>BẢNG GIÁ BẮP, NƯỚC MỚI NHẤT 2025</h3>
+        </div>
+
+        <div class="promo-card" data-id="u22">
+            <img src="../Images/Promotion/img2.png" alt="U22 Online" />
+            <p class="date">16/07/2025</p>
+            <h3>ƯU ĐÃI GIÁ VÉ 55.000Đ/VÉ 2D CHO THÀNH VIÊN U22</h3>
+        </div>
+
+        <div class="promo-card" data-id="garan">
+            <img src="../Images/Promotion/img3.png" alt="Gà rán siêu mê ly" />
+            <p class="date">31/01/2025</p>
+            <h3>GÀ RÁN SIÊU MÊ LY ĐỒNG GIÁ CHỈ 79K</h3>
+        </div>
+
+        <div class="promo-card" data-id="uudai2025">
+            <img src="../Images/Promotion/img4.png" alt="Ưu đãi 2025" />
+            <p class="date">26/09/2025</p>
+            <h3>TƯNG BỪNG ƯU ĐÃI NĂM 2025 TẠI TIME CINEMA</h3>
+        </div>
+
+        <div class="promo-card" data-id="specialmonday">
+            <img src="../Images/Promotion/img5.png" alt="Special Monday" />
+            <p class="date">31/12/2025</p>
+            <h3>SPECIAL MONDAY - ĐỒNG GIÁ 50.000Đ/VÉ 2D THỨ 2 CUỐI THÁNG</h3>
+        </div>
+
+        <div class="promo-card" data-id="banggia2024">
+            <img src="../Images/Promotion/img6.png" alt="Bảng giá 2024" />
+            <p class="date">01/07/2025</p>
+            <h3>BẢNG GIÁ BẮP, NƯỚC MỚI NHẤT 2024</h3>
+        </div>
+
+        <div class="promo-card" data-id="xemtet">
+            <img src="../Images/Promotion/img7.png" alt="Xem phim Tết" />
+            <p class="date">05/02/2025</p>
+            <h3>CHÀO TẾT, VÉ XEM PHIM ƯU ĐÃI THẢ GA</h3>
+        </div>
+
+        <div class="promo-card" data-id="combohay">
+            <img src="../Images/Promotion/img8.png" alt="Combo thật đã" />
+            <p class="date">04/09/2025</p>
+            <h3>SIÊU ƯU ĐÃI “PHIM THẬT HAY - COMBO THẬT ĐÃ” CHÍNH THỨC TRỞ LẠI</h3>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Phần chi tiết -->
+    <section class="promo-detail hidden" id="promoDetail">
+        <h2 id="detailTitle"></h2>
+        <img id="detailImg" src="" alt="" />
+        <p id="detailDesc"></p>
+        <button id="backBtn">← Quay lại</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+          <ul class="footer-menu">
+            <li><a href="../HTML/Index.html">Trang chủ</a></li>
+            <li><a href="../HTML/Ticket.html">Mua vé</a></li>
+            <li><a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+            <li><a href="../HTML/Prices.html">Giá vé</a></li>
+            <li><a href="../HTML/ThongTin.html">Thông Tin</a></li>
+            <li><a href="../HTML/HoTro.html">Hỗ Trợ</a></li>
+          </ul>
+            
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+            <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+            <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+            <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+            <p>~Design by nice~</p>
+        </div>
+    </footer>
+    <!--loader-->
+    <div class="loader"></div>
+    <!-- Script -->
+    <script src="../JS/Promotion.js"></script>
+    <script src="../JS/Header.js"></script>
+    <script src="../JS/Loading.js"></script>
+</body>
+</html>

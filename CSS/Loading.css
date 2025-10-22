@@ -1,0 +1,37 @@
+.loader {
+  position: fixed;              /* Giữ loader cố định trên màn hình, không bị cuộn theo trang */
+  top: 0;                       /* Căn lên trên cùng của trang */
+  left: 0;                      /* Căn sát bên trái */
+  width: 100vw;                 /* Chiếm toàn bộ chiều rộng khung nhìn (viewport width) */
+  height: 100vh;                /* Chiếm toàn bộ chiều cao khung nhìn (viewport height) */
+  display: flex;                /* Dùng flexbox để dễ căn giữa */
+  justify-content: center;      /* Căn giữa theo chiều ngang */
+  align-items: center;          /* Căn giữa theo chiều dọc */
+  background-color: #f7f9fb;    /* Màu nền của loader (sáng nhạt) */
+  transition: opacity 2s, visibility 0.5s; /* Hiệu ứng mờ dần và ẩn dần khi tắt loader */
+  z-index: 9999;                /* Đảm bảo loader nằm trên tất cả các phần tử khác */
+}
+
+.loader-hidden {
+  opacity: 0;                   /* Làm mờ loader đi (ẩn dần) */
+  visibility: hidden;           /* Ẩn loader khỏi giao diện sau khi mờ */
+}
+
+.loader::after {
+  content: "";                  /* Tạo phần tử giả để hiển thị hình tròn */
+  width: 75px;                  /* Chiều rộng của vòng tròn */
+  height: 75px;                 /* Chiều cao của vòng tròn */
+  border: 15px solid #dddddd;   /* Độ dày và màu của viền xung quanh vòng */
+  border-top-color: rgb(16 20 27 / 0.8);    /* Màu viền phần trên khác để tạo hiệu ứng quay */
+  border-radius: 50%;           /* Bo tròn viền tạo thành hình tròn */
+  animation: loading 0.75s ease infinite; /* Gọi animation xoay liên tục */
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);   /* Bắt đầu từ góc xoay 0 độ */
+  }
+  to {
+    transform: rotate(1turn);   /* Kết thúc xoay 1 vòng (360 độ) */
+  }
+}

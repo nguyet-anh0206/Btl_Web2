@@ -1,0 +1,179 @@
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #131318;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 40px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: auto;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #d5ec50;
+}
+
+.header-right a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #2a1658;
+}
+
+.btn-red {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn-red:hover {
+  opacity: 0.8;
+}
+
+/* ===== POPUP ĐĂNG NHẬP ===== */
+.nen-mo {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+   color: aliceblue; /*  Màu của cái nút đăng nhập   */
+}
+
+
+.hop-dangnhap {
+  background-color:rgb(16 20 27 / 0.8);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 320px;
+  position: relative;
+  text-align: center;
+}
+
+.nut-dong {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hop-dangnhap input,
+.hop-dangnhap button {
+  width: 100%;
+  box-sizing: border-box; /* Giúp tính luôn cả padding + border vào chiều rộng (tránh bị tràn khung) */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  
+}
+
+.hop-dangnhap button {
+  background-color: #ff3838;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.chuyen {
+  margin-top: 10px;
+  text-align: center; 
+  width: 100%; 
+  cursor: pointer;
+}
+
+
+/* ===== MEDIA QUERY RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  /* Header co lại và sắp xếp theo cột */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  /* Logo co nhỏ chữ */
+  .logo-text {
+    font-size: 16px;
+  }
+
+  /* Menu nav co lại, khoảng cách nhỏ hơn */
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Buttons bên phải co lại */
+  .header-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  /* Popup đăng nhập co vừa màn hình */
+  .hop-dangnhap {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .hop-dangnhap input,
+  .hop-dangnhap button {
+    padding: 8px;
+  }
+}

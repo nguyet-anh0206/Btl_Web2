@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé xem phim</title>
+    <link rel = "stylesheet" href = "../CSS/Ticket.css">
+    <link rel = "stylesheet" href = "../CSS/Header.css">
+    <link rel = "stylesheet" href = "../CSS/Footer.css">
+    <link rel = "stylesheet" href = "../CSS/Loading.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="header-left">
+            <img src="../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TIME CINEMA</span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../HTML/Index.html" class="active">Trang chủ</a>
+            <a href="../HTML/Ticket.html">Mua vé</a>
+            <a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+            <a href="../HTML/Prices.html">Giá vé</a>
+        </nav>
+
+        <div class="header-right">
+            <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+            <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+        </div>
+    </header>
+
+    <!-- Popup -->
+    <div class="nen-mo" id="nenMo">
+        <div class="hop-dangnhap">
+            <span class="nut-dong" id="nutDong">&times;</span>
+            <h2 id="tieuDeForm">Đăng nhập</h2>
+            <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+            <input type="password" id="matKhau" placeholder="Mật khẩu">
+            <button id="nutXacNhan">Đăng nhập</button>
+            <div class="chuyen" id="chuyenDangKy">
+                <a href="#">Đăng ký</a>
+            </div>
+        </div>
+    </div>
+    <!--DANH SÁCH PHIM-->
+    <section id = "movie-list" class = "movie-list">
+        <h2>Phim đang chiếu</h2>
+        <div class = "movies-container" id = "movies-container"></div>
+    </section>
+    <!--CHI TIẾT PHIM-->
+    <section id = "movie-detail" class = "hidden">
+        <button id = "back-to-list">← Quay lại</button>
+        <div id = "movie-info"></div>
+        <!--NGÀY VÀ GIỜ-->
+        <div id = "schedule-container">
+            <div id = "dates"></div>
+            <div id = "times"></div>
+        </div>
+        <!--KHỐI CHỌN GHẾ NGỒI-->
+        <section class = "seat-container">
+            <div>
+                <div id = "seat-selection">
+                    <div id = "time-selected"></div> <!--CHỌN NGÀY / GIỜ-->
+                    <div id = "screen" class = "hidden">
+                        <img src = "../Images/Ticket/screen.webp">
+                        <div id = "screen-text">Màn hình</div>
+                    </div> <!--KHỐI GHẾ-->
+                    <div id = "normal-seat-top"></div>
+                    <div id = "vip-seat"></div>
+                    <div id = "normal-seat-bottom"></div>
+                    <div id = "couple-seat"></div>
+                    <div class = "seat-note"> <!--CHÚ THÍCH CÁC LOẠI GHẾ NGỒI-->
+                        <div class = "item">
+                            <div class = "inside-item-booked hidden"></div>
+                            <span class = "inside-item hidden">Đã đặt</span>
+                        </div>
+                        <div class = "item">
+                            <div class = "inside-item-selected hidden"></div>
+                            <span class = "inside-item hidden">Ghế bạn chọn</span>
+                        </div>
+                        <div class = "item">
+                            <div class = "inside-item-available hidden"></div>
+                            <span class = "inside-item hidden">Ghế thường</span>
+                        </div>
+                        <div class = "item">
+                            <div class = "inside-item-vip hidden"></div>
+                            <span class = "inside-item hidden">Ghế VIP</span>
+                        </div>
+                        <div class = "item">
+                            <div class = "inside-item-couple hidden"></div>
+                            <span class = "inside-item hidden">Ghế Đôi</span>
+                        </div>
+                    </div>
+                    <div class = "bottom-info"> <!--KHỐI THANH TOÁN / NÚT CHỌN LẠI NGÀY-->
+                        <div class="bottom-info-top">
+                            <div id = "selected-seats"></div>
+                            <div class = "bottom-buttons">
+                                <button id = "back-to-date" class = "hidden">Quay lại</button>
+                                <button id = "payment" class = "payment-w-seats hidden">Thanh toán</button>
+                            </div>
+                        </div>
+                        <div id = "total-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div id = "qr-popup" class = "hidden"> <!--KHỐI QR-->
+                <div class = "qr-content">
+                    <h3>Quét mã để thanh toán</h3>
+                    <img src = "../Images/Ticket/qr-code.jpg" alt = "Mã qr">
+                    <button id = "close-qr">X</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src = "../JS/Ticket.js"></script>
+    <script src = "../JS/Header.js"></script>
+    <script src="../JS/Loading.js"></script>
+</body>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer-top">
+        <ul class="footer-menu">
+            <li><a href="../HTML/Index.html">Trang chủ</a></li>
+            <li><a href="../HTML/Ticket.html">Mua vé</a></li>
+            <li><a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+            <li><a href="../HTML/Prices.html">Giá vé</a></li>
+            <li><a href="../HTML/ThongTin.html">Thông Tin</a></li>
+            <li><a href="../HTML/HoTro.html">Hỗ Trợ</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+    </div>
+    <div class="footer-info">
+        <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+        <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+        <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+        <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+        <p>~Design by nice~</p>
+    </div>
+</footer>
+<div class="loader"></div>
+</html>

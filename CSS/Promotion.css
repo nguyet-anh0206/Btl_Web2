@@ -1,0 +1,143 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #131318;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #fcfcfa;
+}
+
+.promo-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.promo-card {
+  background: #1c1e22;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.promo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px #353535;
+}
+
+.promo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.promo-card .date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin: 10px 15px 0;
+}
+
+.promo-card h3 {
+  font-size: 1rem;
+  padding: 10px 15px 20px;
+  color: #f5f5f5;
+}
+
+/* Phần chi tiết */
+.promo-detail {
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promo-detail img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.promo-detail h2 {
+  color: #fffffe;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.promo-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#backBtn {
+  background-color: #535353;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#backBtn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Ẩn khi chưa chọn */
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .promo-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px 30px;
+  }
+
+  .promo-card img {
+    height: 160px;
+  }
+
+  .promo-card {
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .promo-detail {
+    padding: 15px;
+  }
+
+  .promo-detail h2 {
+    font-size: 1.5rem;
+  }
+
+  .promo-detail p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  #backBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

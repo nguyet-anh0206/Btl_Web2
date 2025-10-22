@@ -1,0 +1,111 @@
+.footer {
+  background-color: #0b0b0d;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-menu li a:hover {
+  color: #ffcc00;
+}
+
+.footer-social {
+  margin-bottom: 25px;
+}
+
+.footer-social a img {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.footer-info b {
+  color: #fff;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Màn hình vừa (tablet) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-menu {
+    gap: 15px;
+  }
+
+  .footer-menu li a {
+    font-size: 15px;
+  }
+
+  .footer-social a img {
+    width: 35px;
+    margin: 0 8px;
+  }
+
+  .footer-info p {
+    font-size: 13px;
+  }
+}
+
+/* Màn hình nhỏ (điện thoại) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 10px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-menu li a {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    margin: 15px 0;
+  }
+
+  .footer-social a img {
+    width: 30px;
+    margin: 0 6px;
+  }
+
+  .footer-info p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

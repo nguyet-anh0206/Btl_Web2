@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Cinema</title>
+ 
+    <link rel="stylesheet" href="../CSS/Index.css" />
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  </head>
+  <body>
+     <header class="header">
+        <div class="header-left">
+            <img src="../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TIME CINEMA</span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../HTML/Index.html" >Trang chủ</a>
+            <a href="../HTML/Ticket.html">Mua vé</a>
+            <a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+            <a href="../HTML/Prices.html">Giá vé</a>
+        </nav>
+
+        <div class="header-right">
+            <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+            <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+        </div>
+  </header>
+
+  <!-- Popup -->
+  <div class="nen-mo" id="nenMo">
+    <div class="hop-dangnhap">
+      <span class="nut-dong" id="nutDong">&times;</span>
+      <h2 id="tieuDeForm">Đăng nhập</h2>
+      <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+      <input type="password" id="matKhau" placeholder="Mật khẩu">
+      <button id="nutXacNhan">Đăng nhập</button>
+      <div class="chuyen" id="chuyenDangKy">
+        <a href="#">Đăng ký</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide -->
+  <div class="slide">
+    <div class="slide1">
+      <img src="../Images/Posters/Chainsawman_2.jpg" alt="Poster 5" />
+      <img src="../Images/Posters/ChiNgaEmNang_2.jpg" alt="Poster 6" />
+      <img src="../Images/Posters/ChuThuatHoiChien_2.jpg" alt="Poster 7" />
+      <img src="../Images/Posters/CucVangCuaNgoai_2.jpg" alt="Poster 8" />
+      <img src="../Images/Posters/TuChienTrenKhong_2.jpg" alt="Poster 1" />
+      <img src="../Images/Posters/ToQuocTrongTim.jpg" alt="Poster 3" />
+      <img src="../Images/Posters/ChuThuatHoiChien_2.jpg" alt="Poster 2" />
+      <img src="../Images/Posters/QuyAnTang_2.jpg" alt="Poster 4" />
+    </div> 
+    
+         
+    <button class="btn prev">❮</button>
+    <button class="btn next">❯</button>
+  </div>
+      <!-- PHIM ĐANG CHIẾU -->
+      <section id="phimDangChieu" class="poster-container">
+        <h2>🎬 Phim đang chiếu</h2>
+        <div class="poster-grid">
+          <!-- Danh sách phim đang chiếu -->
+          <a href="../HTML/Movieinfo_HTML/TuChienTrenKhongInfo.html" class="poster"> 
+            <img src="../Images/Posters/TuChienTrenKhong.jpg" alt="Poster 1">
+            <div class="poster-info">
+              <div class="movie-title">Tử Chiến Trên Không</div>
+              <div class="movie-details">118 phút | Hành động</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/ChuThuatHoiChienInfo.html" class="poster">
+            <img src="../Images/Posters/ChuThuatHoiChien.jpg" alt="Poster 2" />
+            <div class="poster-info">
+              <div class="movie-title">Chú Thuật Hồi Chiến</div>
+              <div class="movie-details">110 phút | Hoạt hình</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/CauBeCaHeoInfo.html" class="poster">
+            <img src="../Images/Posters/CauBecaheo.png" alt="Poster 3" />
+            <div class="poster-info">
+              <div class="movie-title">Cậu Bé Cá Heo và Bí Mật 7 Đại Dương</div>
+              <div class="movie-details">96 phút | Hoạt hình</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/TroChoiAoGiacInfo.html" class="poster">
+            <img src="../Images/Posters/TroChoiAoGiac.png" alt="Poster 4" />
+            <div class="poster-info">
+              <div class="movie-title">Trò Chơi Ảo Giác</div>
+              <div class="movie-details">118 phút | Hành động</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/TayAnhGiuMotViSaoInfo.html" class="poster">
+            <img src="../Images/Posters/TayAnhGiuMotViSao.png" alt="Poster 5" />
+            <div class="poster-info">
+              <div class="movie-title">Tay Anh Giữ Một Vì Sao</div>
+              <div class="movie-details">117 phút | Lãng mạn</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/QuyAnTangInfo.html" class="poster">
+            <img src="../Images/Posters/QuyAnTang.jpg" alt="Poster 6" />
+            <div class="poster-info">
+              <div class="movie-title">Quỷ Ăn Tạng 3</div>
+              <div class="movie-details">104 phút | Kinh dị</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/NhanDienInfo.html" class="poster">
+            <img src="../Images/Posters/NhanDien.png" alt="Poster 7" />
+            <div class="poster-info">
+              <div class="movie-title">Nhận Diện</div>
+              <div class="movie-details">102 phút | Hồi hộp, ly kỳ</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/CucVangCuaNgoaiInfo.html" class="poster">
+            <img src="../Images/Posters/CucVangCuaNgoai.jpg" alt="Poster 8" />
+            <div class="poster-info">
+              <div class="movie-title">Cục Vàng Của Ngoại</div>
+              <div class="movie-details">119 phút | Gia đình</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/ChiNgaEmNangInfo.html" class="poster">
+            <img src="../Images/Posters/ChiNgaEmNang.jpg" alt="Poster 9" />
+            <div class="poster-info">
+              <div class="movie-title">Chị Ngã Em Nâng</div>
+              <div class="movie-details">118 phút | Hài hước</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/ChainsawManInfo.html" class="poster">
+            <img src="../Images/Posters/ChainsawMan.jpg" alt="Poster 10" />
+            <div class="poster-info">
+              <div class="movie-title">Chainsaw Man</div>
+              <div class="movie-details">100 phút | Phiêu lưu</div>
+            </div>
+          </a>
+        </div>
+      </section>
+  
+      <!-- PHIM SẮP CHIẾU -->
+      <section id="phimSapChieu" class="poster-container">
+        <h2>🍿 Phim sắp chiếu</h2>
+        <div class="poster-grid">
+          <a href="../HTML/Movieinfo_HTML/BitMatBatNaiInfo.html" class="poster">
+            <img src="../Images/Posters/BitMatBatNai.png" alt="Poster 1" />
+            <div class="poster-info">
+              <div class="movie-title">Bịt Mắt Bắt Nai</div>
+              <div class="movie-details">92 phút | Giật gân</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/CaiMaInfo.html" class="poster">
+            <img src="../Images/Posters/CaiMa.jpg" alt="Poster 2" />
+            <div class="poster-info">
+              <div class="movie-title">Cải Mả</div>
+              <div class="movie-details">120 phút | Kinh dị</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/DienThoaiDen2Info.html" class="poster">
+            <img src="../Images/Posters/DienThoaiDen.jpg" alt="Poster 3" />
+            <div class="poster-info">
+              <div class="movie-title">Điện Thoại Đen 2</div>
+              <div class="movie-details">114 phút | Kinh dị</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/ChoCungDungSoInfo.html" class="poster">
+            <img src="../Images/Posters/Goodboy.jpg" alt="Poster 4" />
+            <div class="poster-info">
+              <div class="movie-title">Goodboy: Chó Cưng Đừng Sợ</div>
+              <div class="movie-details">110 phút | Kinh dị</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/NhaMaXoInfo.html" class="poster">
+            <img src="../Images/Posters/NhaMaXo.png" alt="Poster 5" />
+            <div class="poster-info">
+              <div class="movie-title">Nhà Ma Xó</div>
+              <div class="movie-details">108 phút | Kinh dị, gia đình</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/NhatViInfo.html" class="poster">
+            <img src="../Images/Posters/NhatVi.jpg" alt="Poster 6" />
+            <div class="poster-info">
+              <div class="movie-title">Nhật Vị</div>
+              <div class="movie-details">80 phút | Kinh dị</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/PhaDamSinhNhatMeInfo.html" class="poster">
+            <img src="../Images/Posters/PhaDam.jpg" alt="Poster 7" />
+            <div class="poster-info">
+              <div class="movie-title">Phá Đám - Sinh Nhật Mẹ</div>
+              <div class="movie-details">90 phút | Hài, gia đình</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/ToQuocTrongTim.html" class="poster">
+            <img src="../Images/Posters/ToQuocTrongTim.png" alt="Poster 8" />
+            <div class="poster-info">
+              <div class="movie-title">Tổ Quốc Trong Tim: The Concert Film</div>
+              <div class="movie-details">120 phút | Phim tài liệu</div>
+            </div>
+          </a>
+  
+          <a href="../HTML/Movieinfo_HTML/TinhNguoiDuyenMaInfo.html" class="poster">
+            <img src="../Images/Posters/TinhNguoiDuyenMa.jpg" alt="Poster 9" />
+            <div class="poster-info">
+              <div class="movie-title">Tình Người Duyên Ma: Nhắm Mak Yêu Luôn</div>
+              <div class="movie-details">104 phút | Phim tài liệu</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+<footer class="footer">
+  <div class="footer-top">
+    <ul class="footer-menu">
+        <li><a href="../HTML/Index.html">Trang chủ</a></li>
+        <li><a href="../HTML/Ticket.html">Mua vé</a></li>
+        <li><a href="../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+        <li><a href="../HTML/Prices.html">Giá vé</a></li>
+        <li><a href="../HTML/ThongTin.html">Thông Tin</a></li>
+        <li><a href="../HTML/HoTro.html">Hỗ Trợ</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-social">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+  </div>
+
+  <div class="footer-info">
+    <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+    <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+    <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+    <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+    <p>~Design by nice~</p>
+  </div>
+</footer>
+    <!-- Loader  -->
+    <div class="loader"></div> 
+
+    <!-- Script -->
+    <script src="../JS/Index.js"></script>
+    <script src="../JS/Header.js"></script>
+    <script src="../JS/Loading.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Cinema</title>
+    <link href="../lib/Swiper.js/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../CSS/Header.css" />
+    <link rel="stylesheet" href="../../CSS/Footer.css" />
+    <link rel="stylesheet" href="../../CSS/MovieInfo.css" />
+    <link rel="stylesheet" href="../../CSS/Loading.css">
+  </head>
+<body>
+   <header class="header">
+        <div class="header-left">
+            <img src="../../Images/Logo/Logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TIME CINEMA</span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../../HTML/Index.html" class="active">Trang chủ</a>
+            <a href="../../HTML/Ticket.html">Mua vé</a>
+            <a href="../../HTML/Promotion.html">Tin mới & Ưu đãi</a>
+            <a href="../../HTML/Prices.html">Giá vé</a>
+        </nav>
+
+        <div class="header-right">
+            <a id="nutDangKy" class="btn-outline">Đăng ký</a>
+            <a id="nutDangNhap" class="btn-red">Đăng nhập</a>
+        </div>
+    </header>
+
+    <!-- Popup -->
+    <div class="nen-mo" id="nenMo">
+        <div class="hop-dangnhap">
+            <span class="nut-dong" id="nutDong">&times;</span>
+            <h2 id="tieuDeForm">Đăng nhập</h2>
+            <input type="text" id="tenDangNhap" placeholder="Tên đăng nhập">
+            <input type="password" id="matKhau" placeholder="Mật khẩu">
+            <button id="nutXacNhan">Đăng nhập</button>
+            <div class="chuyen" id="chuyenDangKy">
+                <a href="#">Đăng ký</a>
+            </div>
+        </div>
+    </div>
+    <main class="container my-5">
+        <div class="row">
+            <!-- Movie Poster and Booking Button -->
+            <section class=" movie-poster-section" id="movie-poster">
+                <img src="../../Images/Posters/ChiNgaEmNang.jpg" alt="Poster phim" class="custom-img-size movie-poster" />
+                
+            </section>
+    
+            <!-- Movie Details and Summary -->
+            <section class=" movie-details-section">
+              <div id="movie-details" >
+                  <h1 class=" movie-title">Chị Ngã Em Nâng</h1>
+                  <div class="movie-info">
+                      <div class="info-item"><strong>Đạo diễn:</strong>Vũ Thành Vinh</div>
+                      <div class="info-item"><strong>Diễn viên:</strong>Lê Khánh, Quốc Trường, Thuận Nguyễn, Uyển Ân.</div>
+                      <div class="info-item"><strong>Người đủ 13 tuổi trở lên<br> Ngày Khởi Chiếu:</strong> 03/10/2025</div>
+                      <div class="info-item"><strong>Thông tin cơ bản: </strong>Hài hước, li kì (118 Phút)</div>
+                      <div class="info-item"><strong>Loại: 2D | Normal sound | Phụ đề tiếng Việt</strong></div>
+                  </div>
+              </div>
+
+              <!-- Movie Summary -->
+              
+                  <h2 class=" summary-title">Chi tiết nội dung</h2>
+                  <p class="summary-text">
+                    Chị Ngã Em Nâng là câu chuyện cảm động xoay quanh hai chị em Thương và Lực – lớn lên trong một gia đình gắn 
+                    bó với nghề làm nhang truyền thống. Biến cố xảy ra từ sớm khiến Thương trở thành chỗ dựa duy nhất cho em trai, 
+                    vừa làm chị, vừa gánh vai trò của cha mẹ. Lớn lên trong điều kiện không đủ đầy, nhưng với bản lĩnh cùng những 
+                    lời dạy ăn sâu vào tâm thức mà cha mẹ dành cho Thương, cô đã kiên trì đầy nghị lực để quyết tâm thay đổi cuộc 
+                    sống. Thương thành công và kỳ vọng em trai đi theo con đường mình đã lựa chọn. Tuy nhiên, sự áp đặt vô tình tạo 
+                    nên rạn nứt, đẩy hai chị em vào những mâu thuẫn sâu sắc – thậm chí đến mức đối mặt sinh tử.
+                  </p>
+              
+              <a href="../../HTML/Index.html" class="btn-secondary  ">
+                   <button class="btn-custom">Quay lại</button>
+                </a>
+            </section>
+        </div>
+    </main>
+    <!--Footer-->
+   <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-menu">
+                <li><a href="../../HTML/Index.html">Trang chủ</a></li>
+                <li><a href="../../HTML/Ticket.html">Mua vé</a></li>
+                <li><a href="../../HTML/Promotion.html">Tin mới & Ưu đãi</a></li>
+                <li><a href="../../HTML/Prices.html">Giá vé</a></li>
+                <li><a href="../../HTML/ThongTin.html">Thông Tin</a></li>
+                <li><a href="../../HTML/HoTro.html">Hỗ Trợ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Zalo"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>Chủ quản: <b>Sinh viên Đại học GTVT</b></p>
+            <p>Bản quyền thuộc <b>Trung tâm Chiếu phim Quốc gia</b></p>
+            <p>Chi nhánh: <b>Cầu Giấy</b> .</p>
+            <p>Địa chỉ: <b>Số 3 Cầu Giấy, TP.Hà Nội</b> - Điện thoại: <b>9999-9999</b></p>
+            <p>~Design by nice~</p>
+        </div>
+    </footer>
+    <!-- Loader  -->
+    <div class="loader"></div> 
+    <!-- Scripts-->
+     <script src="../../JS/Header.js"></script>
+     <script src="../../JS/Loading.js"></script>
+    </body>
+
+</html>
